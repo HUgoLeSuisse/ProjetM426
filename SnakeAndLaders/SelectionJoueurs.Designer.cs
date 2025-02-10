@@ -39,11 +39,28 @@
             lblTitrePanelJoueur = new Label();
             btnStart = new Button();
             pnlJoueur1 = new Panel();
-            label1 = new Label();
-            textBox1 = new TextBox();
+            btnColor1 = new Button();
+            txtJoueur1 = new TextBox();
+            lblJoueur1 = new Label();
+            ColorDialog = new ColorDialog();
+            pnlJoueur2 = new Panel();
+            btnColor2 = new Button();
+            txtJoueur2 = new TextBox();
+            lblJoueur2 = new Label();
+            pnlJoueur3 = new Panel();
+            btnColor3 = new Button();
+            txtJoueur3 = new TextBox();
+            lblJoueur3 = new Label();
+            pnlJoueur4 = new Panel();
+            btnColor4 = new Button();
+            txtJoueur4 = new TextBox();
+            lblJoueur4 = new Label();
             menuStrip1.SuspendLayout();
             pnlJoueurs.SuspendLayout();
             pnlJoueur1.SuspendLayout();
+            pnlJoueur2.SuspendLayout();
+            pnlJoueur3.SuspendLayout();
+            pnlJoueur4.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
@@ -79,6 +96,7 @@
             btnQuitter.TabIndex = 1;
             btnQuitter.Text = "Quitter";
             btnQuitter.UseVisualStyleBackColor = false;
+            btnQuitter.Click += btnQuitter_Click;
             // 
             // pnlJoueurs
             // 
@@ -101,6 +119,7 @@
             rdb4Joueurs.TabStop = true;
             rdb4Joueurs.Text = "4 Joueurs";
             rdb4Joueurs.UseVisualStyleBackColor = true;
+            rdb4Joueurs.CheckedChanged += rdb4Joueurs_CheckedChanged;
             // 
             // rdb3Joueurs
             // 
@@ -112,6 +131,7 @@
             rdb3Joueurs.TabStop = true;
             rdb3Joueurs.Text = "3 Joueurs";
             rdb3Joueurs.UseVisualStyleBackColor = true;
+            rdb3Joueurs.CheckedChanged += rdb3Joueurs_CheckedChanged;
             // 
             // rdb2Joueurs
             // 
@@ -124,6 +144,7 @@
             rdb2Joueurs.TabStop = true;
             rdb2Joueurs.Text = "2 Joueurs";
             rdb2Joueurs.UseVisualStyleBackColor = true;
+            rdb2Joueurs.CheckedChanged += rdb2Joueurs_CheckedChanged;
             // 
             // lblTitrePanelJoueur
             // 
@@ -150,34 +171,158 @@
             // 
             // pnlJoueur1
             // 
-            pnlJoueur1.Controls.Add(textBox1);
-            pnlJoueur1.Controls.Add(label1);
+            pnlJoueur1.Controls.Add(btnColor1);
+            pnlJoueur1.Controls.Add(txtJoueur1);
+            pnlJoueur1.Controls.Add(lblJoueur1);
             pnlJoueur1.Location = new Point(280, 63);
             pnlJoueur1.Name = "pnlJoueur1";
             pnlJoueur1.Size = new Size(274, 42);
             pnlJoueur1.TabIndex = 5;
             // 
-            // label1
+            // btnColor1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(3, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(54, 15);
-            label1.TabIndex = 6;
-            label1.Text = "Joueur 1 ";
+            btnColor1.BackColor = Color.Red;
+            btnColor1.Location = new Point(219, 10);
+            btnColor1.Name = "btnColor1";
+            btnColor1.Size = new Size(36, 23);
+            btnColor1.TabIndex = 8;
+            btnColor1.UseVisualStyleBackColor = false;
+            btnColor1.Click += btnColor1_Click;
             // 
-            // textBox1
+            // txtJoueur1
             // 
-            textBox1.Location = new Point(77, 11);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(122, 23);
-            textBox1.TabIndex = 7;
+            txtJoueur1.Location = new Point(77, 11);
+            txtJoueur1.Name = "txtJoueur1";
+            txtJoueur1.Size = new Size(122, 23);
+            txtJoueur1.TabIndex = 7;
             // 
-            // Game
+            // lblJoueur1
+            // 
+            lblJoueur1.AutoSize = true;
+            lblJoueur1.Location = new Point(3, 9);
+            lblJoueur1.Name = "lblJoueur1";
+            lblJoueur1.Size = new Size(54, 15);
+            lblJoueur1.TabIndex = 6;
+            lblJoueur1.Text = "Joueur 1 ";
+            // 
+            // pnlJoueur2
+            // 
+            pnlJoueur2.Controls.Add(btnColor2);
+            pnlJoueur2.Controls.Add(txtJoueur2);
+            pnlJoueur2.Controls.Add(lblJoueur2);
+            pnlJoueur2.Location = new Point(280, 111);
+            pnlJoueur2.Name = "pnlJoueur2";
+            pnlJoueur2.Size = new Size(274, 42);
+            pnlJoueur2.TabIndex = 6;
+            // 
+            // btnColor2
+            // 
+            btnColor2.BackColor = Color.Blue;
+            btnColor2.Location = new Point(219, 10);
+            btnColor2.Name = "btnColor2";
+            btnColor2.Size = new Size(36, 23);
+            btnColor2.TabIndex = 8;
+            btnColor2.UseVisualStyleBackColor = false;
+            btnColor2.Click += btnColor2_Click;
+            // 
+            // txtJoueur2
+            // 
+            txtJoueur2.Location = new Point(77, 11);
+            txtJoueur2.Name = "txtJoueur2";
+            txtJoueur2.Size = new Size(122, 23);
+            txtJoueur2.TabIndex = 7;
+            // 
+            // lblJoueur2
+            // 
+            lblJoueur2.AutoSize = true;
+            lblJoueur2.Location = new Point(3, 9);
+            lblJoueur2.Name = "lblJoueur2";
+            lblJoueur2.Size = new Size(51, 15);
+            lblJoueur2.TabIndex = 6;
+            lblJoueur2.Text = "Joueur 2";
+            // 
+            // pnlJoueur3
+            // 
+            pnlJoueur3.Controls.Add(btnColor3);
+            pnlJoueur3.Controls.Add(txtJoueur3);
+            pnlJoueur3.Controls.Add(lblJoueur3);
+            pnlJoueur3.Enabled = false;
+            pnlJoueur3.Location = new Point(280, 159);
+            pnlJoueur3.Name = "pnlJoueur3";
+            pnlJoueur3.Size = new Size(274, 42);
+            pnlJoueur3.TabIndex = 9;
+            // 
+            // btnColor3
+            // 
+            btnColor3.BackColor = Color.Yellow;
+            btnColor3.Location = new Point(219, 10);
+            btnColor3.Name = "btnColor3";
+            btnColor3.Size = new Size(36, 23);
+            btnColor3.TabIndex = 8;
+            btnColor3.UseVisualStyleBackColor = false;
+            btnColor3.Click += btnColor3_Click;
+            // 
+            // txtJoueur3
+            // 
+            txtJoueur3.Location = new Point(77, 11);
+            txtJoueur3.Name = "txtJoueur3";
+            txtJoueur3.Size = new Size(122, 23);
+            txtJoueur3.TabIndex = 7;
+            // 
+            // lblJoueur3
+            // 
+            lblJoueur3.AutoSize = true;
+            lblJoueur3.Location = new Point(3, 9);
+            lblJoueur3.Name = "lblJoueur3";
+            lblJoueur3.Size = new Size(54, 15);
+            lblJoueur3.TabIndex = 6;
+            lblJoueur3.Text = "Joueur 3 ";
+            // 
+            // pnlJoueur4
+            // 
+            pnlJoueur4.Controls.Add(btnColor4);
+            pnlJoueur4.Controls.Add(txtJoueur4);
+            pnlJoueur4.Controls.Add(lblJoueur4);
+            pnlJoueur4.Enabled = false;
+            pnlJoueur4.Location = new Point(280, 207);
+            pnlJoueur4.Name = "pnlJoueur4";
+            pnlJoueur4.Size = new Size(274, 42);
+            pnlJoueur4.TabIndex = 9;
+            // 
+            // btnColor4
+            // 
+            btnColor4.BackColor = Color.LimeGreen;
+            btnColor4.Location = new Point(219, 10);
+            btnColor4.Name = "btnColor4";
+            btnColor4.Size = new Size(36, 23);
+            btnColor4.TabIndex = 8;
+            btnColor4.UseVisualStyleBackColor = false;
+            btnColor4.Click += btnColor4_Click;
+            // 
+            // txtJoueur4
+            // 
+            txtJoueur4.Location = new Point(77, 11);
+            txtJoueur4.Name = "txtJoueur4";
+            txtJoueur4.Size = new Size(122, 23);
+            txtJoueur4.TabIndex = 7;
+            // 
+            // lblJoueur4
+            // 
+            lblJoueur4.AutoSize = true;
+            lblJoueur4.Location = new Point(3, 9);
+            lblJoueur4.Name = "lblJoueur4";
+            lblJoueur4.Size = new Size(51, 15);
+            lblJoueur4.TabIndex = 6;
+            lblJoueur4.Text = "Joueur 4";
+            // 
+            // SelectionJoueurs
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(593, 498);
+            Controls.Add(pnlJoueur4);
+            Controls.Add(pnlJoueur3);
+            Controls.Add(pnlJoueur2);
             Controls.Add(pnlJoueur1);
             Controls.Add(btnStart);
             Controls.Add(lblTitrePanelJoueur);
@@ -185,7 +330,7 @@
             Controls.Add(btnQuitter);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            Name = "Game";
+            Name = "SelectionJoueurs";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SnakeAndLader - Joueurs";
             menuStrip1.ResumeLayout(false);
@@ -194,6 +339,12 @@
             pnlJoueurs.PerformLayout();
             pnlJoueur1.ResumeLayout(false);
             pnlJoueur1.PerformLayout();
+            pnlJoueur2.ResumeLayout(false);
+            pnlJoueur2.PerformLayout();
+            pnlJoueur3.ResumeLayout(false);
+            pnlJoueur3.PerformLayout();
+            pnlJoueur4.ResumeLayout(false);
+            pnlJoueur4.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -211,7 +362,21 @@
         private Label lblTitrePanelJoueur;
         private Button btnStart;
         private Panel pnlJoueur1;
-        private Label label1;
-        private TextBox textBox1;
+        private Label lblJoueur1;
+        private TextBox txtJoueur1;
+        private Button btnColor1;
+        private ColorDialog ColorDialog;
+        private Panel pnlJoueur2;
+        private Button btnColor2;
+        private TextBox txtJoueur2;
+        private Label lblJoueur2;
+        private Panel pnlJoueur3;
+        private Button btnColor3;
+        private TextBox txtJoueur3;
+        private Label lblJoueur3;
+        private Panel pnlJoueur4;
+        private Button btnColor4;
+        private TextBox txtJoueur4;
+        private Label lblJoueur4;
     }
 }
