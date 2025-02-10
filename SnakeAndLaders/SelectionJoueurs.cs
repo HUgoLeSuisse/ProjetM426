@@ -1,8 +1,8 @@
 namespace SnakeAndLaders
 {
-    public partial class Game : Form
+    public partial class SelectionJoueurs : Form
     {
-        public Game()
+        public SelectionJoueurs()
         {
             InitializeComponent();
         }
