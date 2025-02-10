@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
+            menuStrip = new MenuStrip();
             btnOptions = new ToolStripMenuItem();
             btnAide = new ToolStripMenuItem();
             btnQuitter = new Button();
@@ -55,7 +55,7 @@
             btnColor4 = new Button();
             txtJoueur4 = new TextBox();
             lblJoueur4 = new Label();
-            menuStrip1.SuspendLayout();
+            menuStrip.SuspendLayout();
             pnlJoueurs.SuspendLayout();
             pnlJoueur1.SuspendLayout();
             pnlJoueur2.SuspendLayout();
@@ -63,14 +63,14 @@
             pnlJoueur4.SuspendLayout();
             SuspendLayout();
             // 
-            // menuStrip1
+            // menuStrip
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { btnOptions, btnAide });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(593, 24);
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
+            menuStrip.Items.AddRange(new ToolStripItem[] { btnOptions, btnAide });
+            menuStrip.Location = new Point(0, 0);
+            menuStrip.Name = "menuStrip";
+            menuStrip.Size = new Size(593, 24);
+            menuStrip.TabIndex = 0;
+            menuStrip.Text = "menuStrip1";
             // 
             // btnOptions
             // 
@@ -168,6 +168,7 @@
             btnStart.TabIndex = 4;
             btnStart.Text = "Start";
             btnStart.UseVisualStyleBackColor = false;
+            btnStart.Click += btnStart_Click;
             // 
             // pnlJoueur1
             // 
@@ -328,13 +329,13 @@
             Controls.Add(lblTitrePanelJoueur);
             Controls.Add(pnlJoueurs);
             Controls.Add(btnQuitter);
-            Controls.Add(menuStrip1);
-            MainMenuStrip = menuStrip1;
+            Controls.Add(menuStrip);
+            MainMenuStrip = menuStrip;
             Name = "SelectionJoueurs";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SnakeAndLader - Joueurs";
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
+            menuStrip.ResumeLayout(false);
+            menuStrip.PerformLayout();
             pnlJoueurs.ResumeLayout(false);
             pnlJoueurs.PerformLayout();
             pnlJoueur1.ResumeLayout(false);
@@ -351,7 +352,7 @@
 
         #endregion
 
-        private MenuStrip menuStrip1;
+        private MenuStrip menuStrip;
         private ToolStripMenuItem btnOptions;
         private ToolStripMenuItem btnAide;
         private Button btnQuitter;

@@ -8,6 +8,9 @@ namespace SnakeAndLaders
         Color Color3 = Color.Yellow;
         Color Color4 = Color.Green;
 
+
+        Game game;
+
         public SelectionJoueurs()
         {
             InitializeComponent();
@@ -76,9 +79,17 @@ namespace SnakeAndLaders
 
         private void rdb4Joueurs_CheckedChanged(object sender, EventArgs e)
         {
-            pnlJoueur3.Enabled=true;
-            pnlJoueur4.Enabled=true;
+            pnlJoueur3.Enabled = true;
+            pnlJoueur4.Enabled = true;
         }
         #endregion
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            game = new Game();
+
+            game.Show();
+
+        }
     }
 }
