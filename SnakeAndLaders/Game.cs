@@ -5,6 +5,7 @@ namespace SnakeAndLaders
         public Game()
         {
             InitializeComponent();
+            button1.Text = "ASd";
         }
     }
 }

@@ -33,13 +33,12 @@
             // 
             // button1
             // 
-            button1.Location = new Point(210, 314);
+            button1.Location = new Point(290, 279);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += this.button1_Click;
             // 
             // Game
             // 
