@@ -31,10 +31,8 @@
             menuStrip = new MenuStrip();
             btnOptions = new ToolStripMenuItem();
             btnAide = new ToolStripMenuItem();
-            pibPlateau = new PictureBox();
             pnlStart = new Panel();
             menuStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pibPlateau).BeginInit();
             SuspendLayout();
             // 
             // menuStrip
@@ -58,16 +56,6 @@
             btnAide.Size = new Size(43, 20);
             btnAide.Text = "Aide";
             // 
-            // pibPlateau
-            // 
-            pibPlateau.Image = Properties.Resources.TableSnakeLader2;
-            pibPlateau.Location = new Point(12, 27);
-            pibPlateau.Name = "pibPlateau";
-            pibPlateau.Size = new Size(541, 513);
-            pibPlateau.SizeMode = PictureBoxSizeMode.StretchImage;
-            pibPlateau.TabIndex = 2;
-            pibPlateau.TabStop = false;
-            // 
             // pnlStart
             // 
             pnlStart.BackColor = Color.Transparent;
@@ -82,13 +70,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(779, 552);
             Controls.Add(pnlStart);
-            Controls.Add(pibPlateau);
             Controls.Add(menuStrip);
             Name = "Game";
             Text = "Game";
             menuStrip.ResumeLayout(false);
             menuStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pibPlateau).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -98,7 +84,6 @@
         private MenuStrip menuStrip;
         private ToolStripMenuItem btnOptions;
         private ToolStripMenuItem btnAide;
-        private PictureBox pibPlateau;
         private Panel pnlStart;
     }
 }
