@@ -15,6 +15,7 @@ namespace SnakeAndLaders
         public Game()
         {
             InitializeComponent();
+            pnlStart.Parent = 
         }
     }
 }

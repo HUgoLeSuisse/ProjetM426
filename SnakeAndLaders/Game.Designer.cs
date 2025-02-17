@@ -31,10 +31,10 @@
             menuStrip = new MenuStrip();
             btnOptions = new ToolStripMenuItem();
             btnAide = new ToolStripMenuItem();
-            pictureBox1 = new PictureBox();
+            pibPlateau = new PictureBox();
             pnlStart = new Panel();
             menuStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pibPlateau).BeginInit();
             SuspendLayout();
             // 
             // menuStrip
@@ -58,18 +58,19 @@
             btnAide.Size = new Size(43, 20);
             btnAide.Text = "Aide";
             // 
-            // pictureBox1
+            // pibPlateau
             // 
-            pictureBox1.Image = Properties.Resources.TableSnakeLader;
-            pictureBox1.Location = new Point(12, 27);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(541, 513);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
+            pibPlateau.Image = Properties.Resources.TableSnakeLader2;
+            pibPlateau.Location = new Point(12, 27);
+            pibPlateau.Name = "pibPlateau";
+            pibPlateau.Size = new Size(541, 513);
+            pibPlateau.SizeMode = PictureBoxSizeMode.StretchImage;
+            pibPlateau.TabIndex = 2;
+            pibPlateau.TabStop = false;
             // 
             // pnlStart
             // 
+            pnlStart.BackColor = Color.Transparent;
             pnlStart.Location = new Point(22, 479);
             pnlStart.Name = "pnlStart";
             pnlStart.Size = new Size(63, 41);
@@ -81,13 +82,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(779, 552);
             Controls.Add(pnlStart);
-            Controls.Add(pictureBox1);
+            Controls.Add(pibPlateau);
             Controls.Add(menuStrip);
             Name = "Game";
             Text = "Game";
             menuStrip.ResumeLayout(false);
             menuStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pibPlateau).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -97,7 +98,7 @@
         private MenuStrip menuStrip;
         private ToolStripMenuItem btnOptions;
         private ToolStripMenuItem btnAide;
-        private PictureBox pictureBox1;
+        private PictureBox pibPlateau;
         private Panel pnlStart;
     }
 }
