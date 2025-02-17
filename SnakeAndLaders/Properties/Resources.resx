@@ -118,22 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Des1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Des1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Des5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Des5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Des2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Des2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Des3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Des3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Des4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Des4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Des5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Des5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Des6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Des6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Des1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Des1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Des3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Des3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TableSnakeLader" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TableSnakeLader.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

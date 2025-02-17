@@ -119,5 +119,15 @@ namespace SnakeAndLaders.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TableSnakeLader {
+            get {
+                object obj = ResourceManager.GetObject("TableSnakeLader", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
