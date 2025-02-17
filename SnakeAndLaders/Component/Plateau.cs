@@ -58,7 +58,7 @@ public class Plateau
         new Case(),
         new CaseQuestion(new Question("Quel est le plus haut sommet du monde ?", new string[]{"Mont Blanc", "Kilimandjaro", "Everest", "K2"}, 2)),
         new Case(),
-        new CaseQuestion(new Question("Quel est le plus haut sommet du monde ?", new string[]{"Mont Blanc", "Kilimandjaro", "Everest", "K2"}, 2)),
+        new CaseQuestion(new Question("Qui a écrit 'Les Misérables' ?", new string[]{"Victor Hugo", "Émile Zola", "Gustave Flaubert", "Molière"}, 0)),
         new Case(),
         new Case(),
         new Case()
