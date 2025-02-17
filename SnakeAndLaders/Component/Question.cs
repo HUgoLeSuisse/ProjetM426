@@ -19,13 +19,21 @@ public class Question
     /// <summary>
     /// Ensemeble des propositions
     /// </summary>
-    private string[] proposistion;
+    private string[] proposition;
 
 
     /// <summary>
     /// Emplacement de la réponse
     /// </summary>
     private int reponse;
+
+    public Question(string question, string[] proposition, int reponse)
+    {
+        this.question = question;
+        this.proposition = proposition;
+        this.reponse = reponse;
+    }
+
 
     /// <summary>
     /// 
